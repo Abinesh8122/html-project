@@ -1,0 +1,41 @@
+/* Contact Page Specific Styles */
+.contact-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.contact-info {
+    flex: 1;
+    min-width: 300px;
+}
+
+.contact-info ul {
+    list-style: none;
+}
+
+.contact-info li {
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #eee;
+}
+
+.contact-info li:last-child {
+    border-bottom: none;
+}
+
+.contact-info strong {
+    color: #3498db;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.map-container {
+    flex: 1;
+    min-width: 300px;
+}
+
+.map-container h2 {
+    margin-bottom: 15px;
+}

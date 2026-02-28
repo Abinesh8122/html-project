@@ -1,0 +1,43 @@
+/* Departments Page Specific Styles */
+.dept-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+}
+
+.dept-table th, .dept-table td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.dept-table th {
+    background-color: #3498db;
+    color: white;
+}
+
+.dept-table tr:hover {
+    background-color: #f5f5f5;
+}
+
+/* Department specific row colors */
+.cse {
+    background-color: #e3f2fd;
+}
+
+.ece {
+    background-color: #e8f5e9;
+}
+
+.mech {
+    background-color: #fff3e0;
+}
+
+.civil {
+    background-color: #fce4ec;
+}
+
+.it {
+    background-color: #f3e5f5;
+}
