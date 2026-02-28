@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        button{
+            width: 100px;
+            height: 100px;
+            background-color: rgb(106, 255, 0);
+        }
+    </style>
+    
+     <button id="red">red</button>
+     <button id="yellow">yellow</button>
+     <button id="blue">blue</button>
+     <button id="green">green</button>
+     <button id="orange">orange</button>
+    <script>
+        const btn1=document.getElementById("red");
+        const btn2=document.getElementById("yellow");
+        const btn3=document.getElementById("blue");
+        const btn4=document.getElementById("green");
+        const btn5=document.getElementById("orange");
+        const main=document.getElementsByTagName("body")[0];
+        btn1.addEventListener("mousemove",()=>{
+            main.style.backgroundColor="red";
+        });
+        btn2.addEventListener("click",()=>{
+            main.style.backgroundColor="yellow";
+        });
+        btn3.addEventListener("keyup",()=>{
+            main.style.backgroundColor="blue";
+        });
+        btn3.addEventListener("keydown",()=>{
+            main.style.backgroundColor="green";
+        });
+        btn4.addEventListener("click",()=>{
+            main.style.backgroundColor="green";
+        });
+        btn5.addEventListener("click",()=>{
+            main.style.backgroundColor="orange";
+        });
+    </script>
+</body>
+</html>
