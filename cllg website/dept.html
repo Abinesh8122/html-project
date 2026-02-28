@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Departments — SXCCE</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <img src="image8.png" alt="College logo" height="50" width="175">
+      <nav class="main-nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="dept.html" class="active">Departments</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="admission.html">Admission</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h2>Departments & Faculty</h2>
+
+    <table class="dept-table" role="table" aria-label="Department table">
+      <thead>
+        <tr>
+          <th>Department</th>
+          <th>HOD</th>
+          <th>Courses Offered</th>
+          <th>Faculty Count</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Computer Science</td>
+          <td>Dr. A. ABC</td>
+          <td>B.Tech, M.Tech</td>
+          <td>18</td>
+        </tr>
+        <tr>
+          <td>Electronics & Communication</td>
+          <td>Dr. R. DEF</td>
+          <td>B.Tech</td>
+          <td>14</td>
+        </tr>
+        <tr>
+          <td>Mechanical</td>
+          <td>Prof. S. GHI</td>
+          <td>B.Tech</td>
+          <td>12</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h3>Department Image</h3>
+    <img src="image7.jpeg" alt="Department Lab"
+         style="border:6px solid #e8f0ff; border-radius:10px; display:block; max-width:100%; transition: transform .35s ease;"
+         onmouseover="this.style.transform='scale(1.02)';" onmouseout="this.style.transform='scale(1)';">
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> St. Xavier's Catholic College of Engineering — All rights reserved.</p>
+    </div>
+  </footer>
+  <script src="main.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Gallery — SXCCE</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <img src="image8.png" alt="College logo" height="50" width="175">
+      <nav class="main-nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="dept.html">Departments</a>
+        <a href="gallery.html" class="active">Gallery</a>
+        <a href="admission.html">Admission</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h2>Campus Gallery</h2>
+    <p class="muted">Click any image to view larger (uses a simple modal)</p>
+
+    <section class="gallery-grid" aria-label="Gallery of campus images">
+      <img src="image1.jpeg" alt="Campus 1" class="gallery-item" data-index="1">
+      <img src="image2.jpeg" alt="Lab 2" class="gallery-item" data-index="2">
+      <img src="image3.jpeg" alt="Event 3" class="gallery-item" data-index="3">
+      <img src="image4.jpeg" alt="Workshop 4" class="gallery-item" data-index="4">
+      <img src="image5.jpeg" alt="Sports 5" class="gallery-item" data-index="5">
+      <img src="image6.jpeg" alt="Library 6" class="gallery-item" data-index="6">
+    </section>
+  </main>
+
+  <div id="modal" class="modal" aria-hidden="true">
+    <div class="modal-content">
+      <button id="modalClose" class="modal-close" aria-label="Close">&times;</button>
+      <img id="modalImg" src="" alt="Expanded image">
+      <p id="modalCaption"></p>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> St. Xavier's Catholic College of Engineering — All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

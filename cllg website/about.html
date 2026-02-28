@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>About Us — SXCCE</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .about-hero {
+      background: linear-gradient(120deg, rgba(0,60,120,0.06), rgba(120,10,90,0.04));
+      padding: 2rem;
+      border-radius: 12px;
+      transition: transform .35s ease, box-shadow .35s ease;
+    }
+    .about-hero:hover { transform: translateY(-6px); box-shadow: 0 12px 30px rgba(0,0,0,.08); }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <img src="image8.png" alt="College logo" height="50" width="175">
+      <nav class="main-nav">
+        <a href="index.html">Home</a>
+        <a href="about.html" class="active">About</a>
+        <a href="dept.html">Departments</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="admission.html">Admission</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="about-hero">
+      <h2>About St. Xavier's Catholic College of Engineering</h2>
+      <p><strong>History:</strong> Founded to provide technical education to the community, SXCCE has grown into a hub for engineering education and applied research.</p>
+      <p><strong>Objectives:</strong> To equip students with practical skills, ethical grounding, and problem-solving abilities.</p>
+    </section>
+
+    <section class="cards">
+      <div class="card">
+        <h3>Accreditation</h3>
+        <p>Approved by relevant educational councils and affiliated with the university.</p>
+      </div>
+      <div class="card">
+        <h3>Facilities</h3>
+        <ul>
+          <li>Modern labs</li>
+          <li>Library</li>
+          <li>Wi-Fi & Campus networks</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Clubs & Activities</h3>
+        <p>Tech clubs (ACM/IEEE), cultural events and community outreach.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> St. Xavier's Catholic College of Engineering — All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="main.js">
+    document.getElementById('year2').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

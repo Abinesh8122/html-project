@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Form Validation</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <h1>Admission Form</h1>
+
+  <form id="admissionForm">
+    <input type="text" name="fullname" placeholder="Full Name" required /><br />
+    <input type="email" name="email" placeholder="Email" required /><br />
+    <input type="text" name="phone" placeholder="Phone Number" required /><br />
+    <select name="course">
+      <option value="">Select Course</option>
+      <option value="BCA">BCA</option>
+      <option value="B.Tech">B.Tech</option>
+    </select><br />
+    <input type="radio" name="gender" value="Male" /> Male
+    <input type="radio" name="gender" value="Female" /> Female <br />
+    <textarea name="remarks" placeholder="Any remarks..."></textarea><br />
+    <button type="submit">Submit</button>
+  </form>
+
+  <p id="formMsg"></p>
+
+  <script src="js/form-validation.js"></script>
+</body>
+</html>
